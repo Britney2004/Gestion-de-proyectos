@@ -1,0 +1,60 @@
+body {
+  background: url("../public/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navBar {
+  color: white;
+  background-image: linear-gradient(90deg,
+      /* Dirección del degradado: de izquierda a derecha */
+      #000000,
+      /* Primer color (rojo) */
+      #7e0000,
+      /* Segundo color (amarillo) */
+      #000000
+      /* Tercer color (azul) */
+    )
+}
+
+
+/* Media queries para adaptar el navBar a pantallas más pequeñas */
+@media (max-width: 768px) {
+  .elemento-fondo {
+    background-image: url('../public/fondo.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .navBar {
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    text-align: center;
+  }
+
+  .navBar-links {
+    flex-direction: column;
+    gap: 10px;
+    /* Ajusta el espacio entre los enlaces */
+    width: 100%;
+    /* Ocupa el ancho completo */
+  }
+}
+
+.imgLogo {
+  width: 60px;
+  height: auto
+}
